@@ -14,10 +14,9 @@ class PicturesController < ApplicationController
   def create
 
     @p = Picture.new
-    @p.id= params[:id]
-    @p.caption = params[:zebra]
+    @p.the_caption = params[:the_caption]
     @p.image_url = params[:image_url]
-    @d.save
+    @p.save
 
     redirect_to("http://localhost:3000/pictures")
 

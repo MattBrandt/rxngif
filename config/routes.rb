@@ -3,11 +3,11 @@ Rxngif::Application.routes.draw do
   get("/all_pictures", { :controller => "pictures", :action => "index" })
 
   # CREATE
-  get("/pictures/new", { :controller => "pictures", :action => "new"        })
+  get("/new_picture_form", { :controller => "pictures", :action => "new"        })
   get("/create_picture", { :controller => "pictures", :action => "create"   })
 
   # READ
-  get("/pictures",     { :controller => "pictures", :action => "index"      })
+  get("/all_pictures",     { :controller => "pictures", :action => "index"      })
   get("/pictures/:id", { :controller => "pictures", :action => "show"       })
 
   # UPDATE
