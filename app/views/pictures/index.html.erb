@@ -1,15 +1,12 @@
-<div class="page-header">
-  <h1>Pictures</h1>
-</div>
 
 <a href="http://localhost:3000/pictures/new" class="btn btn-primary btn-large">Add A New Picture</a>
 
-<% @list_of_pictures.each do |picture| %>
+<div><% @pictures.each do |picture| %></div>
   <div class="row">
     <div class="col-sm-12">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title"><%= picture.the_caption %></h3>
+          <h3 class="panel-title"><%= picture.caption %></h3>
         </div>
         <div class="panel-body">
           <div class="col-sm-2">
@@ -28,4 +25,4 @@
       </div>
     </div>
   </div>
-<% end %>
+

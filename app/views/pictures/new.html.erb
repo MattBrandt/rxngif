@@ -2,14 +2,13 @@
 
 <form action="http://localhost:3000/create_picture">
   <div>
-    <label for="the_caption">Caption:</label>
-    <input id="the_caption" type="text" name="caption">
+    <label for="source">Source:</label>
+    <input id="source" name="source" type="text" value = "<%= @p.source %>" >
   </div>
   <div>
-    <label for="image_url">Image URL:</label>
-    <input id="image_url" type="text" name="source">
+    <label for="caption">Caption:</label>
+    <input id="caption" name="caption" type="text" value = "<%= @p.caption %>" >
   </div>
-  <div>
     <input type="submit" value="Create Picture">
   </div>
 </form>

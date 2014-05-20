@@ -15,3 +15,9 @@ Picture:
   - source: string
   - caption: string
   - favorite: boolean
+
+Comment:
+  - picture_id: integer
+  - content: text
+
+
